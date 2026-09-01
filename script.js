@@ -1,2 +1,3 @@
-
-setInterval(createFallingItem, 700); // Elemen lebih sedikit, HP jadi lebih ringan & mulus
+onload = () => {
+  document.body.classList.remove("container");
+};
