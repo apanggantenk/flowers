@@ -2040,3 +2040,19 @@ body {
     font-size: 20px !important;
   }
 }
+@media (max-width: 768px) {
+  /* Memaksa HP menggunakan akselerasi GPU agar animasi mulus */
+  .falling-item, .flower, .leaf {
+    will-change: transform, opacity;
+  }
+
+  /* Mengurangi blur di HP agar tidak patah-patah */
+  .night, .flower__grass__overlay, .flower__leafs::after {
+    filter: none !important; /* Menghapus efek blur berat di HP */
+  }
+
+  /* Mengurangi shadow tebal pada foto */
+  .falling-photo {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4) !important;
+  }
+}
